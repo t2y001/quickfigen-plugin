@@ -1,0 +1,17 @@
+{
+  "name": "quickfigen",
+  "owner": {
+    "name": "QuickFigen",
+    "email": "soporte@quickfigen.com"
+  },
+  "metadata": {
+    "description": "El plugin de QuickFigen para Claude: figuras de matemática y física, explicaciones paso a paso y boletines verificados."
+  },
+  "plugins": [
+    {
+      "name": "quickfigen",
+      "source": "./",
+      "description": "Figuras de matemática y física con calidad de libro: geometría con regla y compás, plano cartesiano y física, dibujadas por el motor de QuickFigen desde un script. También explicaciones paso a paso y boletines de problemas verificados."
+    }
+  ]
+}

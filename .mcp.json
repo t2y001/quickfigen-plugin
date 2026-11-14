@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "quickfigen": {
+      "type": "http",
+      "url": "https://www.quickfigen.com/api/mcp"
+    }
+  }
+}
