@@ -9,6 +9,7 @@
   },
   "homepage": "https://www.quickfigen.com/conectar",
   "repository": "https://github.com/t2y001/quickfigen-plugin",
+  "icon": "./.claude-plugin/icon.png",
   "privacyPolicyUrl": "https://www.quickfigen.com/legal/privacy",
   "license": "Apache-2.0",
   "keywords": [
