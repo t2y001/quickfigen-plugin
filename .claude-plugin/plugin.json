@@ -1,6 +1,7 @@
 {
   "name": "quickfigen",
-  "version": "0.1.1",
+  "displayName": "QuickFigen",
+  "version": "0.1.2",
   "description": "Figuras de matemática y física con calidad de libro: geometría con regla y compás, plano cartesiano y física, dibujadas por el motor de QuickFigen desde un script. También explicaciones paso a paso y boletines de problemas verificados.",
   "author": {
     "name": "QuickFigen",
