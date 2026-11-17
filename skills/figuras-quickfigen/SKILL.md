@@ -1,6 +1,6 @@
 ---
 name: figuras-quickfigen
-description: Dibuja figuras de matemática y física con el motor de QuickFigen —geometría con regla y compás, funciones en el plano cartesiano, cuerpos y fuerzas, óptica— y verifica sus medidas. Usar cuando la persona pide una figura, un gráfico de una función, un diagrama de cuerpo libre o una construcción geométrica para una clase, un examen, un libro o un problema que quiere resolver.
+description: Dibuja figuras de matemática y física con el motor de QuickFigen —geometría con regla y compás, funciones en el plano cartesiano, cuerpos y fuerzas, óptica, vectores, planos y sólidos en el espacio (QF 3D)— y verifica sus medidas. Usar cuando la persona pide una figura, un gráfico de una función, un diagrama de cuerpo libre o una construcción geométrica para una clase, un examen, un libro o un problema que quiere resolver.
 ---
 
 # Figuras con QuickFigen
@@ -18,6 +18,10 @@ apoyos. No hay que calcular coordenadas a mano ni dibujar a ojo.
      inecuaciones y deslizadores.
    - `physics`: cuerpos, planos, poleas, cuerdas, resortes, fuerzas y su
      diagrama de cuerpo libre; lentes, espejos y refracción.
+   - `space3d` (QF 3D): el espacio xyz con una vista de cámara — puntos,
+     vectores (suma, producto vectorial, componentes, ángulo), rectas,
+     planos, polígonos y sólidos (prisma, pirámide, cubo, caja) con sus
+     aristas ocultas punteadas.
 
    Si piden algo que QuickFigen todavía no dibuja (circuitos, campos y
    cargas), díselo a la persona en lugar de improvisarlo con otra gramática.
@@ -26,7 +30,10 @@ apoyos. No hay que calcular coordenadas a mano ni dibujar a ojo.
 3. **Escribe el script**: un enunciado por línea, cada objeto con nombre. Un
    punto que sale de una construcción se construye (`foot`, `midpoint`,
    `intersection`, `on_circle`), no se calcula afuera. El aspecto (colores,
-   grosores, ocultar letras) va en un bloque `/qf-style` al final.
+   grosores, ocultar letras) va en un bloque `/qf-style` al final. En
+   `space3d` todavía no hay construcciones de puntos (punto medio, pie,
+   cruces) ni bloque `/qf-style`: un punto que calcules afuera, compruébalo
+   con `qf_measure` antes de afirmarlo.
 4. **Revisa** con `qf_check_figure`: compila igual, te devuelve la figura como
    imagen y no la muestra en el chat. Úsalo mientras corriges, para no dejarle
    a la persona una vista por cada intento. Si la respuesta es un error:
@@ -44,7 +51,9 @@ apoyos. No hay que calcular coordenadas a mano ni dibujar a ojo.
      (`radio=1.5`) o pon la medida dentro (`rotulo=dentro`), o mueve la nota.
 6. **Verifica** con `qf_measure` antes de afirmar un resultado numérico: da
    las medidas exactas, sin redondear, para compararlas con la solución
-   analítica.
+   analítica. Mide `geometry` y `space3d`; en QF 3D mide en el espacio
+   (distancias entre puntos, rectas y planos, ángulos, áreas, volúmenes),
+   no en el dibujo.
 7. **Muestra** la figura terminada con `qf_draw_figure`: la vista de QuickFigen
    la dibuja en el chat.
    - `editLink: true` trae un link para retocarla a mano en el editor.

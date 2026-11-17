@@ -23,7 +23,7 @@ usarlo con tres skills:
 | `qf_dsl_reference` | Devuelve la referencia del lenguaje de figuras (QF DSL) de una gramática. | 0 |
 | `qf_draw_figure` | Dibuja un script y devuelve la figura en SVG o PNG; la muestra en el chat. | 1 |
 | `qf_check_figure` | Dibuja un script y le devuelve a Claude la imagen y los avisos del motor, sin mostrarla en el chat, para revisarla antes. | 1 |
-| `qf_measure` | Mide una figura de geometría: coordenadas, distancias, ángulos y áreas exactas. | 1 |
+| `qf_measure` | Mide una figura de geometría o de QF 3D: coordenadas, distancias, ángulos, áreas y volúmenes exactos. | 1 |
 | `qf_explain` | Compila una explicación paso a paso y la muestra navegable en el chat. | 1 |
 | `qf_booklet` | Arma un boletín verificado como HTML listo para imprimir. | 1 más 1 por problema |
 
