@@ -31,9 +31,10 @@ apoyos. No hay que calcular coordenadas a mano ni dibujar a ojo.
    punto que sale de una construcción se construye (`foot`, `midpoint`,
    `intersection`, `on_circle`), no se calcula afuera. El aspecto (colores,
    grosores, ocultar letras) va en un bloque `/qf-style` al final. En
-   `space3d` todavía no hay construcciones de puntos (punto medio, pie,
-   cruces) ni bloque `/qf-style`: un punto que calcules afuera, compruébalo
-   con `qf_measure` antes de afirmarlo.
+   `space3d` los puntos también se construyen (`midpoint`, `foot` —el pie a
+   una recta o a un plano—, `intersection` y `on_segment`), y los vértices de
+   un sólido (`vertices=ABCDEFGH`) se usan por su nombre; QF 3D todavía no
+   tiene bloque `/qf-style`.
 4. **Revisa** con `qf_check_figure`: compila igual, te devuelve la figura como
    imagen y no la muestra en el chat. Úsalo mientras corriges, para no dejarle
    a la persona una vista por cada intento. Si la respuesta es un error:
