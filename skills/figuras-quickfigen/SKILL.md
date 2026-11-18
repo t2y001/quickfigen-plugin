@@ -20,7 +20,8 @@ apoyos. No hay que calcular coordenadas a mano ni dibujar a ojo.
      diagrama de cuerpo libre; lentes, espejos y refracción.
    - `space3d` (QF 3D): el espacio xyz con una vista de cámara — puntos,
      vectores (suma, producto vectorial, componentes, ángulo), rectas,
-     planos, polígonos y sólidos (prisma, pirámide, cubo, caja) con sus
+     planos, polígonos y sólidos (prisma, pirámide, tronco, cubo, caja y los
+     poliedros regulares: tetraedro, octaedro, dodecaedro, icosaedro) con sus
      aristas ocultas punteadas.
 
    Si piden algo que QuickFigen todavía no dibuja (circuitos, campos y
