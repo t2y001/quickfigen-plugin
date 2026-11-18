@@ -33,9 +33,10 @@ apoyos. No hay que calcular coordenadas a mano ni dibujar a ojo.
    `intersection`, `on_circle`), no se calcula afuera. El aspecto (colores,
    grosores, ocultar letras) va en un bloque `/qf-style` al final. En
    `space3d` los puntos también se construyen (`midpoint`, `foot` —el pie a
-   una recta o a un plano—, `intersection` y `on_segment`), y los vértices de
-   un sólido (`vertices=ABCDEFGH`) se usan por su nombre; QF 3D todavía no
-   tiene bloque `/qf-style`.
+   una recta, a un plano o al plano de un polígono, como la altura de una
+   pirámide—, `center` de un polígono, `intersection` y `on_segment`), y los
+   vértices de un sólido (`vertices=ABCDEFGH`) se usan por su nombre. Lo que
+   solo sirve para construir se esconde con `/qf-style` (`piso { oculto: sí }`).
 4. **Revisa** con `qf_check_figure`: compila igual, te devuelve la figura como
    imagen y no la muestra en el chat. Úsalo mientras corriges, para no dejarle
    a la persona una vista por cada intento. Si la respuesta es un error:
