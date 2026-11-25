@@ -37,7 +37,8 @@ apoyos. No hay que calcular coordenadas a mano ni dibujar a ojo.
    pirámide—, `center` de un polígono, `intersection` y `on_segment`), y los
    vértices de un sólido (`vertices=ABCDEFGH`) se usan por su nombre. Un
    poliedro convexo cualquiera se da por sus vértices, `polyhedron(A, B, C, …)`:
-   el motor arma las caras y las aristas ocultas, no se calculan afuera. Lo que
+   el motor arma las caras y las aristas ocultas, no se calculan afuera. Una
+   cara es `face(s, A, B, C)`, y `angle(c1, c2)` en `qf_measure` da el diedro. Lo que
    solo sirve para construir se esconde con `/qf-style` (`piso { oculto: sí }`).
 4. **Revisa** con `qf_check_figure`: compila igual, te devuelve la figura como
    imagen y no la muestra en el chat. Úsalo mientras corriges, para no dejarle
