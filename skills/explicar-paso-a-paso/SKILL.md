@@ -37,6 +37,9 @@ si la hay, una exploración con deslizador. Solo geometría.
    corrige eso y vuelve a llamar.
 6. **Revisa `diagnostics`**: `label_overlap` (un rótulo que choca con otro
    objeto) y `focus_out_of_frame` (algo nuevo quedó fuera del acercamiento).
+   Para ver un cuadro, pide `previewFrames: ["2.1"]` (paso.momento, hasta
+   tres): te devuelve su PNG, que no se muestra en el chat. Con `focus`, la
+   figura sale entera y lo que se ve queda en un recuadro punteado.
 7. **Entrega**: la explicación ya se ve en el chat. `editUrl` la abre en el
    editor de QF Explain para mejorarla, y el `.html` descargable funciona sin
    conexión.

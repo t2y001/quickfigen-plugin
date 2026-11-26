@@ -24,7 +24,7 @@ usarlo con tres skills:
 | `qf_draw_figure` | Dibuja un script y devuelve la figura en SVG o PNG; la muestra en el chat. | 1 |
 | `qf_check_figure` | Dibuja un script y le devuelve a Claude la imagen y los avisos del motor, sin mostrarla en el chat, para revisarla antes. | 1 |
 | `qf_measure` | Mide una figura de geometría o de QF 3D: coordenadas, distancias, ángulos, áreas y volúmenes exactos. | 1 |
-| `qf_explain` | Compila una explicación paso a paso y la muestra navegable en el chat. | 1 |
+| `qf_explain` | Compila una explicación paso a paso y la muestra navegable en el chat; si Claude lo pide, le devuelve además la imagen de hasta tres cuadros para revisarlos. | 1 |
 | `qf_booklet` | Arma un boletín verificado como HTML listo para imprimir. | 1 más 1 por problema |
 
 Cada cuenta de QuickFigen tiene una cuota mensual de unidades según su plan
