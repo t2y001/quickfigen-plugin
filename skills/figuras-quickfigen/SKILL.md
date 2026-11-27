@@ -22,10 +22,11 @@ apoyos. No hay que calcular coordenadas a mano ni dibujar a ojo.
      vectores (suma, producto vectorial, componentes, ángulo), rectas,
      planos, polígonos y sólidos (prisma, pirámide, tronco, cubo, caja y los
      poliedros regulares: tetraedro, octaedro, dodecaedro, icosaedro) con sus
-     aristas ocultas punteadas.
+     aristas ocultas punteadas, y la esfera y el elipsoide (`sphere`,
+     `ellipsoid`) con su contorno exacto y su corte con un plano.
 
    Si piden algo que QuickFigen todavía no dibuja (circuitos, campos y
-   cargas), díselo a la persona en lugar de improvisarlo con otra gramática.
+   cargas; en 3D, cilindros, conos y superficies como un paraboloide), díselo a la persona en lugar de improvisarlo con otra gramática.
 2. **Lee la referencia** con `qf_dsl_reference` (no gasta cuota) antes del
    primer script de esa gramática en la conversación.
 3. **Escribe el script**: un enunciado por línea, cada objeto con nombre. Un
